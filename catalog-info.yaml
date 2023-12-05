@@ -1,0 +1,10 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: backstage-demo-techdocs
+  annotations:
+    github.com/project-slug: defra-adp-sandpit/backstage-demo-techdocs
+spec:
+  type: other
+  lifecycle: unknown
+  owner: FCP Grants
