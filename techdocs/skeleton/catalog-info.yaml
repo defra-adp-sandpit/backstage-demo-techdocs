@@ -1,12 +1,12 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: ${{values.name | dump}}
-  description: ${{values.description | dump}}
+  name: backstage-demo-techdocs
+  description: "Test docs repo"
   annotations:
-    github.com/project-slug: ${{values.destination.owner + "/" + values.destination.repo}}
-    backstage.io/techdocs-ref: dir:.
+    github.com/project-slug: defra-adp-sandpit/backstage-demo-techdocs
 spec:
-  type: documentation
-  lifecycle: experimental
-  owner: ${{values.owner | dump}}
+  type: backend
+  lifecycle: alpha
+  owner: "group:default/fcp-grants"
+  system: system:default/adp-shared-services
